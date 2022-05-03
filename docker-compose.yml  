@@ -1,0 +1,33 @@
+version: "3"
+services:
+  assetmanagement:
+    image:  assetmanagement
+    #the container always restarts. It can save time. For example, you don’t have to start the container every time you reboot your machine manually. It restarts the container when either the Docker daemon restarts or the container itself is manually restarted.
+    restart: always
+    #ports: specify ports will be used HOST:CONTAINER Port
+    ports:
+        - "8080:8080"
+    environment:
+      - spring.datasource.url=jdbc:mysql://mysqldb:3306/Assetmanagement?useSSL=false&serverTimeZone=UTC
+    networks:
+      -  assetmanagement-mysql
+    depends_on:
+      - mysqldb
+
+  mysqldb:
+     image: mysql:8.0.26
+     networks:
+       - assetmanagement-mysql
+     #database authentication.
+     environment:
+       - MYSQL_ROOT_PASSWORD=springstudent
+       - MYSQL_DATABASE=Assetmanagement
+       - MYSQL_USER=springstudent
+       - MYSQL_PASSWORD=springstudent
+     #volumes: map volume folders to preserve the data even after container shutdown
+     volumes:
+       - db:/var/lib/mysql
+volumes:
+  db:
+networks:
+  assetmanagement-mysql:
