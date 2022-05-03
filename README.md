@@ -104,8 +104,9 @@ docker logs -f <container_id>
 That’s all we need to do!.
 Now head to postman to perform below operations
 
-![](../../../../var/folders/td/tscklgsj71n7p88wtrd7k8jr0000gn/T/TemporaryItems/NSIRD_screencaptureui_OTlzmF/Screenshot 2022-05-03 at 1.29.03 PM.png)
-![](../../../../var/folders/td/tscklgsj71n7p88wtrd7k8jr0000gn/T/TemporaryItems/NSIRD_screencaptureui_Gefwii/Screenshot 2022-05-03 at 1.29.54 PM.png)
+<img width="1012" alt="Screenshot 2022-05-03 at 1 39 57 PM" src="https://user-images.githubusercontent.com/62843185/166422107-75439b6b-6365-4eac-ae05-2c289a1f244c.png">
+
+<img width="993" alt="Screenshot 2022-05-03 at 1 40 24 PM" src="https://user-images.githubusercontent.com/62843185/166422153-eed37f19-736a-4217-aee4-37290e3f4b4b.png">
 
 
 
