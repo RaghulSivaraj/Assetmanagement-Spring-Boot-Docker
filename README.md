@@ -68,7 +68,7 @@ Now head to postman to perform below operations
 ```
 docker-compose up
 ```
-Follow same steps to get into mysql container for creating tables
+Follow same steps to get into mysql container and execute SQL scripts for creating tables
 
 #### To stop the application
 ```
